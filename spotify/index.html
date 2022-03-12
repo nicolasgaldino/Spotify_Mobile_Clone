@@ -10,16 +10,25 @@
 </head>
 <body>
     <div class="main-container">
-        <h2><img src="img/logo.png" alt="Spotify Logo"></h2>
-        <h1>Música para todos.</h1>
-        <input type="text" name="login" class="login" placeholder="E-mail ou nome de usuário">
-        <input type="password" name="pass" class="login" placeholder="Senha">
-        <p id="lemb">Lembrar de mim<input type="checkbox" id="chec"/></p>
-        <input type="button" value="ENTRAR" class="enfb" id="ent">
+        <div>
+            <img src="img/logo.png" alt="Spotify Logo">
+            <h1>Música para todos.</h1>
+        </div>
+        <div>
+            <input type="text" name="login" class="btn" placeholder="E-mail ou nome de usuário">
+            <input type="password" name="pass" class="btn" placeholder="Senha">
+        </div>
+        <div class="remember">
+            <p id="lembrar">Lembrar de mim</p>
+            <input type="checkbox" id="check">
+        </div>
         <hr>
-        <input type="button" value="ENTRAR COM O FACEBOOK" class="enfb" id="fb">
+        <div class="btn-login">
+            <input type="button" value="ENTRAR" id="ent">
+            <input type="button" value="ENTRAR COM FACEBOOK" id="fcb">
+        </div>
         <p id="cont">NÃO TEM UMA CONTA? <a href="#">INSCREVA-SE</a></p>
     </div>
-    <footer><a href="https://github.com/nicolasgaldino" id="git">Nícolas Galdino &copy; 2022</a></footer>
+    <footer><a href="https://github.com/nicolasgaldino">Nícolas Galdino &copy; 2022</a></footer>
 </body>
 </html>

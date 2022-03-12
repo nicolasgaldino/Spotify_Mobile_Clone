@@ -2,125 +2,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
 
 :root {
-    --cor0:#FFFFFF;
-    --cor1:#3B5998;
-    --cor2:#1DB954;
-    --cor3:#121212;
-    --cor4:#333;
+    --cor0: #ffffff;
+    --cor1: #3b5998;
+    --cor2: #1db954;
+    --cor3: #121212;
+    --cor4: #333333;
 }
 
-*{
+* {
     padding: 0;
-    margin: auto;
+    margin: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-img{
-    width: 250px;
-    margin-top: 20px;
-    margin-right: 25px;
-}
-
-body{
+body {
+    margin-top: 200px;
     background-color: var(--cor3);
 }
 
-.main-container{
-    margin-top: 100px;
-    align-content: center;
-    align-items: center;
+.main-container {
+    margin: auto;
+    padding: 50px 50px;
+    width: 400px;
+    height: auto;
     display: flex;
-    background: var(--cor4);
-    width: 470px;
-    height: 700px;
     flex-direction: column;
-    border-radius: 2%;
-}
-
-div h2 {
+    align-items: center;
+    border-radius: 5px;
     color: var(--cor0);
-    font-size: 30px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    background-color: var(--cor4);
 }
 
-div h1 {
-    color: var(--cor0);
-    font-size: 30px;
-    margin-bottom: 30px;
+div div img {
+    margin-top: -20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    width: 180px;
+    height: auto;
+    cursor: default;
+}
+div div h1 {
+    margin-bottom: 20px;
+    cursor: default;
 }
 
-.login {
-    margin: 5px;
-    width: 300px;
+div div input.btn {
+    margin-bottom: 15px;
+    width: 250px;
     height: 40px;
-    border-radius: 15px;
-    border: none;
-    text-align: center;
-    cursor: pointer;
-}
-
-#lemb {
-    color: var(--cor0);
-    margin-top: 30px;
-    text-align: center;
-}
-
-#chec {
-    margin-left: 140px;
-    text-align: center;
-    cursor: pointer;
-}
-
-.enfb {
+    display: block;
     font-weight: bold;
-    color: var(--cor3);
-    border-radius: 50px;
-    margin-top: 30px;
+    font-size: 15px;
     border: none;
-    padding: 16px;
+    border-radius: 20px;
     text-align: center;
-    width: 300px;
-    height: 60px;
+    color: var(--cor4);
+    background-color: var(--cor0);
     cursor: pointer;
 }
 
-#ent {
-    color: var(--cor2);
+div div.remember{
+    display: flex;
+    align-items: center;
 }
 
-#fb {
-    background-color: var(--cor1);
-    color: var(--cor0);
+div div p#lembrar {
+    margin-right: 110px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: default;
 }
 
-hr {
+div div input#check {
+    cursor: pointer;
+}
+
+div hr {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    width: 250px;
     color: var(--cor3);
-    width: 300px;
-    margin-top: 10px;
-    margin-bottom: -10px;
 }
 
-#cont {
+div div input#ent, #fcb {
+    margin: 15px;
+    width: 250px;
+    height: 40px;
+    display: block;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
     color: var(--cor0);
+    background-color: var(--cor2);
+    cursor: pointer;
 }
 
-p a {
+div div input#fcb {
+    color: var(--cor0);
+    background-color: var(--cor1);
+}
+
+div div input#ent:hover {
+    color: var(--cor2);
+    background-color: var(--cor0);
+}
+
+div div input#fcb:hover {
+    color: var(--cor1);
+    background-color: var(--cor0);
+}
+
+div p#cont {
+    margin-top: 40px;
+    margin-bottom: -30px;
+    font-size: 15px;
+    cursor: default;
+}
+
+div p a {
     text-decoration: none;
     color: var(--cor2);
 }
 
 footer {
-    text-align: center;
-    margin-top: 50px;
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
 }
 
 footer a {
     text-decoration: none;
+    color: var(--cor0);
+}
+
+footer a:hover {
     color: var(--cor2);
-    cursor: pointer;
 }
